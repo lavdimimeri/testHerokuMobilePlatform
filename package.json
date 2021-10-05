@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"webpack\" \"nodemon server.js\""
+    "start":"node server.js",
+    "build":"webpack --config webpack.prod.js",
+    "dev": "concurrently \"webpack --config webpack.dev.js\" \"nodemon server.js\""
   },
   "keywords": [],
   "author": "",
